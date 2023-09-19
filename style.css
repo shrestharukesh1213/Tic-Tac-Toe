@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+[data-moveBox] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+  min-height: 100px;
+  border: 1px solid black;
+  font-size: 3rem;
+}
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
