@@ -1,25 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Raleway:wght@100;200;400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Inclusive Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  background-color: #e0f2fe;
 }
 .gameboard {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  border: 3px solid black;
 }
 [data-moveBox] {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 100px;
-  min-height: 100px;
+  min-width: 150px;
+  min-height: 150px;
   border: 1px solid black;
-  font-size: 3rem;
+  font-size: 5rem;
+  font-weight: bold;
+  background-color: #f0fdfa;
+}
+[data-moveBox]:hover {
+  background-color: #e4f9f4;
 }
 .display {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 53.5vh;
+}
+.playerTurn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  height: 10vh;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  background-color: #0284c7;
+  height: 13vh;
+  color: #172554;
+  border-bottom: 3px solid black;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: #0284c7;
+  height: 10vh;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reset {
+  border: none;
+  border-radius: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #172554;
+  padding: 0.5rem;
+  background-color: #0284c7;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
