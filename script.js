@@ -93,7 +93,7 @@ const winner = (() => {
         gameBoard[6] === "O")
     ) {
       return "Player 2 is the winner";
-    }
+    } else return "It's a draw";
   };
   return { checkWinner };
 })();
